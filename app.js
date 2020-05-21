@@ -3,6 +3,8 @@ const expressLayouts = require('express-ejs-layouts');
 
 const app = express();
 
+require('./db/db');
+
 // EJS
 app.use(expressLayouts);
 app.set('view engine', 'ejs');
